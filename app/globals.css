@@ -1,0 +1,17 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { @apply bg-white text-slate-800 antialiased; word-break: keep-all; }
+}
+
+@layer components {
+  .container-x { @apply mx-auto w-full max-w-content px-5 md:px-8; }
+  .btn-primary { @apply inline-flex items-center justify-center rounded-lg bg-navy-700 px-6 py-3.5 font-semibold text-white transition hover:bg-navy-800; }
+  .btn-outline { @apply inline-flex items-center justify-center rounded-lg border border-white/40 px-6 py-3.5 font-semibold text-white transition hover:bg-white/10; }
+  .eyebrow { @apply text-sm font-bold tracking-widest text-gold-500; }
+  .section-title { @apply mt-3 text-3xl font-bold tracking-tight text-navy-900 md:text-4xl; }
+}
